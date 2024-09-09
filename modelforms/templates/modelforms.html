@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block content %}
+
+<form action="" style="width: 50%; margin: auto">
+  {% csrf_token %}
+  <h3>Model forms</h3>
+  {{form}}
+  <button type="submit">Submit</button>
+</form>
+{% endblock content %}

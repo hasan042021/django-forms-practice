@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block content%}
+
+<form action="" style="width: 50%; margin: auto">
+  <h3>Form Api page</h3>
+  {% csrf_token %}{{form}}
+  <button type="submit">Submit</button>
+</form>
+{%endblock content%}
